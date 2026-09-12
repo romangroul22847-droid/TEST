@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>WARKA MENU</title>
+  <style>
+    * {
+		box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0 10px;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      
+			background-image: url('bg.png');
+			background-repeat: no-repeat;
+			background-position: top center;
+			background-size: 100% auto;
+			background-color: #121212;
+      
+			color: #2b2b2b;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			min-height: 100vh;
+			}
+	  
+
+		.menu-block {
+			background-color: #ffffff;
+			max-width: 900px;
+			width: 100%;
+			padding: 40px 50px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+			border-radius: 4px;
+			margin-top: 45vw;
+			margin-bottom: 50px;
+	 
+		}
+
+		h1 {
+			text-align: left;
+			color: #1a1a1a;
+			margin-top: 0;
+			margin-bottom: 35px;
+			font-weight: 400;
+			font-size: 2em;
+			letter-spacing: 0.5px;
+		}
+
+		.category {
+			margin-bottom: 45px;
+		}
+
+		.category h2 {
+			font-weight: 400;
+			font-size: 1.25em;
+			color: #1a1a1a;
+			text-transform: uppercase;
+			letter-spacing: 0.8px;
+			border-top: 1px solid #b0b0b0;
+			border-bottom: 1px solid #b0b0b0;
+			padding: 12px 0;
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
+
+		.item-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 35px 25px;
+		}
+
+		.item {
+			display: flex;
+			flex-direction: column;
+			gap: 3px;
+			line-height: 1.25;
+			height: 100%;
+		}
+
+		.item-name {
+			font-weight: 600;
+			font-size: 1.1em;
+			color: #1a1a1a;
+			margin-bottom: 1px;
+		}
+
+		.item-portion, .item-desc {
+			font-weight: 400;
+			font-size: 0.88em;
+			color: #555555;
+			line-height: 1.35;
+			word-break: break-word;
+		}
+
+		.item-price {
+			display: flex;
+			flex-direction: column;
+			gap: 2px;
+			font-weight: 500;
+			font-size: 0.95em;
+			color: #1a1a1a;
+			margin-top: auto;
+			padding-top: 8px;
+	    }
+		
+		.grid-subheader {
+			grid-column: 1/ -1;
+			font-weight: 700;
+			font-size: 1.15em;
+			color: #1a1a1a;
+			text-transform: uppercase;
+			letter-spacing: 0.6px;
+			border-bottom: 1px dashed #b0b0b0;
+			padding-bottom: 5px;
+			margin-top: 16px;
+			margin-bottom: 5px;
+		}
+		
+		.item-price span {
+			display: block;
+		}
+
+		.footer-info {
+			margin-top: 40px;
+			padding-top: 20px;
+			text-align: center;
+			width: 100%;
+		}
+		
+		.footer-info .adress {
+			font-size: 1rem;
+			line-height: 1.4;
+			color: #333333;
+			margin-bottom: 20px;
+		}
+		
+		.footer-info .slogan {
+			font-size: 1.1rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			color: #000000;
+		}
+	@media screen and (max-width: 768px) {
+		
+		.menu-block {
+			padding: 25px 18px !important;
+        }
+
+		.item-grid {
+			grid-template-columns: 1fr !important;
+			gap: 24px !important;
+		}
+
+		h1 {
+        font-size: 1.5em !important;
+			margin-bottom: 20px !important;
+		}
+
+		.category h2 {
+			font-size: 1.1em !important;
+		}
+		.footer-info {
+			margin-top: 30px !important;
+			padding-top: 15px !important;
+		}
+	
+		.footer-info .adress {
+			font-size: 0.9rem !important;
+		}
+		.footer-info .slogan {
+			font-size: 1rem !important;
+		}
+	}
+	
+	</style>
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+ <div class="menu-block">
+    <h1>WARKA MENU</h1>
+<section class="category">
+	<h2>NOWOŚCI</h2>
+	<div class="item-grid">
+	<div class="grid-subheader">SHOTY</div>	
+		<div class="item">
+			<div class="item-name">Wujek Iwan</div>
+			<div class="item-desk">1szt.<br>Wódka/Sok cytrynowy/Grenadyna</div>
+			<div class="item-price">8 zł</div>
+		</div>
+	<div class="grid-subheader">WÓDKA</div>
+		<div class="item">
+			<div class="item-name">Mickiewicz</div>
+			<div class="item-price">
+			<span>50 ml 10 zł</span>
+			<span>0,5 L 100 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Soplica Kawowa</div>
+			<div class="item-price">
+			<span>50 ml 10 zł</span>
+			<span>0,5 L 100 zł</span>
+			</div>
+		</div>
+	<div class="grid-subheader">WINO</div>
+		<div class="item">
+			<div class="item-name">Martini Bianco</div>
+			<div class="item-price">
+			<span>100 ml 15 zł</span>
+			<span>1 L 120 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Martini Fiero</div>
+			<div class="item-price">
+			<span>100 ml 15 zł</span>
+			<span>1 L 120 zł</span>
+			</div>
+		</div>
+	</div>
+
+<section class="category">
+	<h2>KOKTAJLE</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Warka Calimocho</div>
+			<div class="item-desc">Wino + Cola</div>
+			<div class="item-price">15 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Mario</div>
+			<div class="item-desc">Rum + Cola</div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Be-ton</div>
+			<div class="item-desc">Becherovka + Tonik</div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Whisky + Cola</div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Gin + Tonic</div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Jäger Bomba</div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Mojito</div>
+			<div class="item-desc">Rum/Sprite/Sok z limonki/Sok cytrynowy/Syrop cukrowy/Cytryna</div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Blue Lagoon</div>
+			<div class="item-desc">Wódka/Sprite/Blue Curaçao/Sok cytrynowy/Cytryna</div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Kraken</div>
+			<div class="item-desc">Wódka/Energetyk/Sok pomarańczowy/Syrop cytrynowy/Grenadyna/Owoce</div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Sex on the Beach</div>
+			<div class="item-desc">Wódka/Sok pomarańczowy/Sok żurawinowy/Grenadyna/Sok brzoskwiniowy</div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Aperol Spritz</div>
+			<div class="item-desc">Prosecco/Aperol/Woda gazowana/Pomarańcza</div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Malibu</div>
+			<div class="item-desc">Malibu/Sok ananasowy/Sok bananowy/Sok cytrynowy/Syrop kokosowy/Mleko</div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Sambuca</div>
+			<div class="item-price">27 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Absynt</div>
+			<div class="item-price">27 zł</div>
+		</div>
+	</div>
+</section>
+
+<section class="category">
+	<h2>SHOTY</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Kamikaze</div>
+			<div class="item-desc">4 szt.<br>Wódka/Blue Curaçao/Sok z limonki/Sok cytrynowy</div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Exotic</div>
+			<div class="item-desc">4 szt.<br>Wódka/Grenadyna/Sok pomarańczowy/Sok brzoskwiniowy </div>
+			<div class="item-price">25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Maru</div>
+			<div class="item-desc">4 szt.<br>Malibu/Gin/Sok pomarańczowy/Limonka/Sok ananasowy/ Mix syropów</div>
+			<div class="item-price">30 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">B-52</div>
+			<div class="item-desc">1 szt.<br>Kahlua/Baileys/Absynt</div>
+			<div class="item-price">18 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Hiroshima</div>
+			<div class="item-desc">1 szt.<br>Sambuca/Baileys/Absynt/Grenadyna</div>
+			<div class="item-price">18 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Wujek Iwan</div>
+			<div class="item-desk">1szt.<br>Wódka/Sok cytrynowy/Grenadyna</div>
+			<div class="item-price">8 zł</div>
+		</div>
+		
+		<div class="grid-subheader">1 szt. / Butelka</div>
+		
+		<div class="item">
+			<div class="item-name">Gin</div>
+			<div class="item-price">
+			<span>50 ml 15 zł</span>
+            <span>0,7 L 170 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Tequila</div>
+			<div class="item-price">
+			<span>50 ml 17 zł</span>
+            <span>0,7 L 200 zł</span>
+			</div>
+		</div>
+			<div class="item">
+			<div class="item-name">Jägermeister</div>
+			<div class="item-price">
+			<span>50 ml 17 zł</span>
+			<span>0,7 L 200 zł</span>
+			</div>
+        </div>
+        <div class="item">
+			<div class="item-name">Becherovka</div>
+			<div class="item-price">
+			<span>50 ml 17 zł</span>
+			<span>0,5 L 150 zł</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="category">
+	<h2>WÓDKA</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Finlandia</div>
+			<div class="item-price">
+			<span>50 ml 13 zł</span>
+			<span>0,5 L 120 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Żubrówka</div>
+			<div class="item-price">
+			<span>50 ml 11 zł</span>
+			<span>0,5 L 100 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Mickiewicz</div>
+			<div class="item-price">
+			<span>50 ml 10 zł</span>
+			<span>0,5 L 100 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Soplica Kawowa</div>
+			<div class="item-price">
+			<span>50 ml 10 zł</span>
+			<span>0,5 L 100 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Soplica</div>
+			<div class="item-price">
+			<span>50 ml 10 zł</span>
+			<span>0,5 L 80 zł</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="category">
+	<h2>WHISKY</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Chivas 12 y.o.</div>
+			<div class="item-price">
+			<span>50 ml 25 zł</span>
+			<span>0,7 L 320 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Jack Daniel's</div>
+			<div class="item-price">
+			<span>50 ml 20 zł</span>
+			<span>0,7 L 230 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Jameson</div>
+			<div class="item-price">
+			<span>50 ml 18 zł</span>
+			<span>0,7 L 200 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Jim Beam</div>
+			<div class="item-price">
+			<span>50 ml 18 zł</span>
+			<span>0,7 L 200 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">The Famous Grouse</div>
+			<div class="item-price">
+			<span>50 ml 18 zł</span>
+			<span>0,7 L 200 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Grant's</div>
+			<div class="item-price">
+			<span>50 ml 18 zł</span>
+			<span>0,7 L 170 zł</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="category">
+	<h2>WINO</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Martini Bianco</div>
+			<div class="item-price">
+			<span>100 ml 15 zł</span>
+			<span>1 L 120 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Martini Fiero</div>
+			<div class="item-price">
+			<span>100 ml 15 zł</span>
+			<span>1 L 120 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Prosecco</div>
+			<div class="item-price">
+			<span>100 ml 15 zł</span>
+			<span>0,75 L 80 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Wino</div>
+			<div class="item-desc">Białe/Czerwone</div>
+			<div class="item-price">
+			<span>100 ml 12 zł</span>
+			<span>0,75 L 60 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Wino Musujące</div>
+			<div class="item-price">0,75 L 40 zł</div>
+		</div>
+	</div>
+</section> 
+
+<section class="category">
+	<h2>PIWO</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Corona</div>
+			<div class="item-desc">Extra/Zero</div>
+			<div class="item-price">0,33 L 15 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Peroni</div>
+			<div class="item-price">0,33 L 15 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Trybunał</div>
+			<div class="item-price">0,5 L 15 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Łomża</div>
+			<div class="item-price">0,5 L 15 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Perła</div>
+			<div class="item-price">0,5 L 15 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Garage</div>
+			<div class="item-desc">Różne smaki</div>
+			<div class="item-price">0,4 L 15 zł</div>
+		</div>
+	</div>
+</section>
+
+<section class="category">
+	<h2>ENERGETYKI</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Red Bull</div>
+			<div class="item-price">0,25 L 18 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Monster</div>
+			<div class="item-price">0,5 L 15 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Black</div>
+			<div class="item-price">0,25 L 12 zł</div>
+		</div>
+	</div>
+</section>
+
+<section class="category">
+	<h2>KOKTAJLE 0,0%</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Mojito</div>
+			<div class="item-desc">Sprite/Sok z limonki/Sok cytrynowy/Syrop cukrowy/Cytryna</div>
+			<div class="item-price">18 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Blue Lagoon</div>
+			<div class="item-desc">Sprite/Blue Curaçao/Sok cytrynowy/Cytryna</div>
+			<div class="item-price">18 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Sex on the Beach</div>
+			<div class="item-desc">Sok pomarańczowy/Sok żurawinowy/Grenadyna/Sok brzoskwiniowy</div>
+			<div class="item-price">18 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Mango Sunrise</div>
+			<div class="item-desc">Sok mango/Sok pomarańczowy/Sprite/Grenadyna</div>
+			<div class="item-price">18 zł</div>
+		</div>
+	</div>
+</section>
+
+<section class="category">
+	<h2>NAPOJE ZIMNE</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Coca-Cola</div>
+			<div class="item-price">
+			<span>0,33 L 13 zł</span>
+			<span>2 L 25 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Sprite</div>
+			<div class="item-price">
+			<span>0,33 L 13 zł</span>
+			<span>2 L 25 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Fanta</div>
+			<div class="item-price">
+			<span>0,33 L 13 zł</span>
+			<span>2 L 25 zł</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Sok</div>
+			<div class="item-price">2 L 25 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Woda</div>
+			<div class="item-desc">gaz./niegaz. </div>
+			<div class="item-price">0,5 L 5 zł</div>
+		</div>
+	</div>
+</section>
+
+<section class="category">
+	<h2>NAPOJE GORĄCE</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Herbata</div>
+			<div class="item-price">15 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Americano</div>
+			<div class="item-price">10 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Espresso</div>
+			<div class="item-price">8 zł</div>
+		</div>
+	</div>
+</section>
+
+<section class="category">
+	<h2>PRZEKĄSKI</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Pringles</div>
+			<div class="item-price">165 g 20 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Lay's</div>
+			<div class="item-price">130 g 15 zł</div>
+		</div>
+		<div class="item">
+			<div class="item-name">Orzeszki ziemne</div>
+			<div class="item-price">140 g 12 zł</div>
+		</div>
+	</div>
+</section>
+
+<section class="category">
+	<h2>OWOCE</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Talerz owocowy</div>
+			<div class="item-price">25 zł</div>
+		</div>
+	</div>
+</section>
+
+<section class="category">
+	<h2>SŁODYCZE</h2>
+	<div class="item-grid">
+		<div class="item">
+			<div class="item-name">Czekolada</div>
+			<div class="item-price">
+			<span>Gorzka 20 zł</span>	
+			<span>Mleczna 20 zł</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="footer-info">
+	<p class="adress">Piotrków Trybunalski,<br>ul. Wojska Polskiego 63</p>
+	<p class="slogan">STOP THINKING, START DRINKING</p>
+	</div>	
+</div>
+	
+</body>
+</html>
