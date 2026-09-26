@@ -559,10 +559,10 @@
 
 		.shots-grid {
 			display: grid;
-			grid-template-columns: repeat(2, minmax(0, 1fr));
+			grid-template-columns: repeat(2, 1fr);
 			gap: 8px;
 			width: 100%;
-			align-items: stretch;
+			box-sizing: border-box;
 		}
 
 		.shots-grid .item {
@@ -571,19 +571,20 @@
 			justify-content: space-between;
 			align-items: flex-start;
 			padding: 8px 10px;
-			min-height: 70px;
+			min-height: 90px;
+			box-sizing: border-box;
 		}
 
 		.shots-grid .item-name {
-			font-size: 0.9rem;
+			font-size: 0.85rem;
 			line-height: 1.2;
 		}
 
 		.shots-frid .item-price {
-			font-size: 0.95rem;
+			font-size: 0.9rem;
+			font-weight: bold;
 			align-self: flex-end;
-			margin-top: auto;
-			padding-top: 4px; 
+			margin-top: 4px; 
 		}
 
 		.shots-grid .item-desc {
