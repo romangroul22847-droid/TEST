@@ -478,16 +478,18 @@
 		.bar-hero-banner {
 			width: 100%;
 			max-width: 100%;
-			border-radius: 45px 16px 20px 16px;
+			border-radius: 16px 16px 0 0;
 			margin-top: 0;
 			background-size: cover;
 			background-position: center;
 		}
 	
 		.banner-title {
-			font-size: 1.6 rem;
-			letter-spacing: 1.5px;
+			font-size: 1.35rem;
+			white-space: nowrap;
+			letter-spacing: 1px;
 			gap: 6px;
+			flex-wrap: nowrap;
 		}
 
 		.banner-title .title-icon {
@@ -497,8 +499,9 @@
 		}
 
 		.banner-subtitle {
-			font-size: 0.75rem;
-			letter-spacing: 0.8px;
+			font-size: 0.7rem;
+			letter-spacing: 0.5px;
+			margin-top: 4px;
 			white-space: normal;
 		}
 
