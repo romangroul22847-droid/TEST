@@ -557,36 +557,45 @@
 			flex-shrink: 0;
 		}
 
+		/* ШОТЫ */
+
 		body .shots-grid {
 			display: grid;
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 			gap: 8px;
 			width: 100%;
 			box-sizing: border-box;
+			align-items: stretch;
 		}
 
 		body .shots-grid .item {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: stretch;
-			min-height: 100px;
+			display: grid;
+			grid-template-columns: 1fr auto;
+			align-items: start;
+			gap: 4px 6px;
 			padding: 10px 8px;
 			box-sizing: border-box;
+			min-height: 100%;
 		}
 
 		body .shots-grid .item-name {
+			grid-column: 1;
+			grid-row: 1;
 			font-size: 0.88rem;
 			line-height: 1.2;
+			word-break: breal-word;
 		}
 
 		body .shots-grid .item-price {
+			grid-column: 2;
+			grid-row: 1;
 			font-size: 0.9rem;
 			font-weight: 800;
 			text-align: right;
-			align-self: flex-end;
-			margin-top: auto;
-			padding-top: 6px; 
+			white-space: nowrap;
+			line-height: 1.2;
+			padding: 0;
+			margin: 0; 
 		}
 
 		body .shots-grid span {
@@ -596,9 +605,12 @@
 		}
 
 		body .shots-grid .item-desc {
-			font-size: 0.7rem;
-			line-height: 1.2;
-			margin-top: 3px;
+			grid-column: 1 / -1;
+			grid-row: 2;
+			font-size: 0.69rem;
+			line-height: 1.5;
+			margin-top: 2px;
+			word-wrap: break-word;
 		}
 
 		body .shots-grid .grid-subheader {
