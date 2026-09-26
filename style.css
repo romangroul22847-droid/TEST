@@ -471,7 +471,7 @@
 	@media screen and (max-width: 768px) {
 	
 		body {
-			padding: 15px 12px;
+			padding: 10px 0;
 			box-sizing: border-box;
 		}
 
