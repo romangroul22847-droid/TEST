@@ -625,7 +625,7 @@
 			padding-bottom: 4px;
 		}
 
-		body .shots-grid .item:has(.item-rice span) .item-price {
+		body .shots-grid .item:has(.item-price span) .item-price {
 			grid-column: 1 / -1;
 			grid-row: 2;
 			text-align: right;
