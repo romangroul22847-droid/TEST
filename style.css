@@ -472,7 +472,6 @@
 	
 		body {
 			padding: 10px 0;
-			box-sizing: border-box;
 		}
 
 		.bar-hero-banner {
@@ -559,25 +558,38 @@
 		}
 
 		.shots-grid {
-			grid-template-columns: repeat(2, 1fr);
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
 			gap: 8px;
+			width: 100%;
+			align-items: stretch;
 		}
 
 		.shots-grid .item {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
 			padding: 8px 10px;
 			min-height: 70px;
 		}
 
 		.shots-grid .item-name {
 			font-size: 0.9rem;
+			line-height: 1.2;
 		}
 
 		.shots-frid .item-price {
 			font-size: 0.95rem;
+			align-self: flex-end;
+			margin-top: auto;
+			padding-top: 4px; 
 		}
 
 		.shots-grid .item-desc {
 			font-size: 0.7rem;
+			line-height: 1.2;
+			margin-top: 3px;
 		}
 
 		.footer-info {
